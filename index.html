@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XRV0JVTY6Q"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRV0JVTY6Q"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -40,7 +39,8 @@
         }
 
         .container {
-            max-width: 1200px;
+            /* DEĞİŞİKLİK: Genişlik sabit piksel yerine yüzdeye çevrildi */
+            max-width: 96%; 
             margin: 0 auto;
             padding: 20px;
         }
@@ -50,20 +50,12 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             padding: 1rem 0;
-            position: sticky;
-            top: 0;
+            /* DEĞİŞİKLİK: Sticky (yapışkan) özellik kaldırıldı */
+            position: relative; 
             z-index: 1000;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
             margin-bottom: 2rem;
-        }
-
-        /* Mobile navigation - remove sticky */
-        @media (max-width: 768px) {
-            nav {
-                position: relative;
-                top: auto;
-            }
         }
 
         nav ul {
